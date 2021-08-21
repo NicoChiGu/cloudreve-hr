@@ -16,14 +16,14 @@ HashIDSalt = kfIWhhcteuRACDnXtgkilGDgOdI8c6j2Prn9lUzossrOZn1pi46SXb80XFAaKMF3
 [Database]
 Type = mysql
 Port = 3306
-User = 数据库用户名
-Password = 数据库密码
-Host = 数据库地址
-Name = 	数据库名称
+User = ${MYSQL_USER}
+Password = ${MYSQL_PASS}
+Host = ${MYSQL_HOST}
+Name = 	${MYSQL_NAME}
 TablePrefix = wd
 [Redis]
-Server = Redis地址：端口
-Password = Redis密码
+Server = ${REDIS_HOST}
+Password = ${REDIS_PASS}
 DB = 0
 EOF
 
